@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.artikolevyinf.TextViews.TextView_blue_12
+        android:id="@+id/titleAlertDialogInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="37dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:text="Selecciones las opciones que desea filtrar"
+        android:textColor="@color/colorBlue" />
+
+    <CheckBox android:id="@+id/checkbox_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SCR"
+        android:paddingLeft="10dp"
+        android:layout_marginHorizontal="37dp"
+        android:buttonTint="@color/colorBlue"
+        app:buttonTint="@color/colorBlue"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/colorGray"/>
+
+    <CheckBox android:id="@+id/checkbox_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Revisiones e Inspecciones BT"
+        android:paddingLeft="10dp"
+        android:layout_marginHorizontal="37dp"
+        android:buttonTint="@color/colorBlue"
+        app:buttonTint="@color/colorBlue"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/colorGray"/>
+
+    <CheckBox android:id="@+id/checkbox_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Revisiones e Inspecciones MT"
+        android:paddingLeft="10dp"
+        android:layout_marginHorizontal="37dp"
+        android:buttonTint="@color/colorBlue"
+        app:buttonTint="@color/colorBlue"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/colorGray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/negative_action"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="160dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="1"
+            android:text="Cancelar"
+            android:textSize="@dimen/button_text_size"
+            android:textAllCaps="false"
+            android:background="@drawable/button_red"
+            android:elevation="10dp"
+            android:stateListAnimator="@null"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/positive_action"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginRight="37dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="1"
+            android:text="Aplicar"
+            android:textSize="@dimen/button_text_size"
+            android:textAllCaps="false"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/colorWhite"
+            android:elevation="10dp"
+            android:stateListAnimator="@null"/>
+    </LinearLayout>
+
+</LinearLayout>

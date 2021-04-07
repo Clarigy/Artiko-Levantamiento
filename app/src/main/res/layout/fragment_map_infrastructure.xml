@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".Fragments.Map.MapInfrastructureFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="13dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.artikolevyinf.TextViews.TextView_blue_12
+                android:id="@+id/textView_blue_123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:text="Agregar entidad"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.example.artikolevyinf.TextViews.TextView_red_10
+                android:id="@+id/tv_cancel_entity_map_infrastructure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="37dp"
+                android:layout_marginRight="37dp"
+                android:text="Cancelar entidad"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollView_add_entities_map_infrastructure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_blue_123">
+
+                <LinearLayout
+                    android:id="@+id/linear_images_camera_scr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_support_map_infrastructure"
+                        android:layout_width="@dimen/cards_entity_map_infrastructure"
+                        android:layout_height="@dimen/cards_entity_map_infrastructure"
+                        android:layout_marginLeft="37dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginVertical="15dp"
+                        android:background="@drawable/unselected_button"
+                        android:drawableTop="@drawable/ic_support_card"
+                        android:elevation="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="10dp"
+                        android:stateListAnimator="@null"
+                        android:text="Apoyo"
+                        android:textAllCaps="false"
+                        android:textSize="10dp" />
+
+                    <Button
+                        android:id="@+id/btn_air_section_map_infrastructure"
+                        android:layout_width="@dimen/cards_entity_map_infrastructure"
+                        android:layout_height="@dimen/cards_entity_map_infrastructure"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/unselected_button"
+                        android:drawableTop="@drawable/ic_air_section_card"
+                        android:elevation="10dp"
+                        android:paddingHorizontal="5dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="10dp"
+                        android:stateListAnimator="@null"
+                        android:text="Tramos aéreos"
+                        android:textAllCaps="false"
+                        android:textSize="10dp" />
+
+                    <Button
+                        android:id="@+id/btn_substation_map_infrastructure"
+                        android:layout_width="@dimen/cards_entity_map_infrastructure"
+                        android:layout_height="@dimen/cards_entity_map_infrastructure"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/unselected_button"
+                        android:drawableTop="@drawable/ic_substation_card"
+                        android:elevation="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="10dp"
+                        android:stateListAnimator="@null"
+                        android:text="Subestación"
+                        android:textAllCaps="false"
+                        android:textSize="10dp" />
+
+                    <Button
+                        android:id="@+id/btn_transformer_map_infrastructure"
+                        android:layout_width="@dimen/cards_entity_map_infrastructure"
+                        android:layout_height="@dimen/cards_entity_map_infrastructure"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/unselected_button"
+                        android:drawableTop="@drawable/ic_transformer_card"
+                        android:elevation="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="10dp"
+                        android:stateListAnimator="@null"
+                        android:text="Transformador"
+                        android:textAllCaps="false"
+                        android:textSize="10dp" />
+
+                    <Button
+                        android:id="@+id/btn_underground_section_map_infrastructure"
+                        android:layout_width="@dimen/cards_entity_map_infrastructure"
+                        android:layout_height="@dimen/cards_entity_map_infrastructure"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/unselected_button"
+                        android:drawableTop="@drawable/ic_underground_section_card"
+                        android:elevation="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="10dp"
+                        android:stateListAnimator="@null"
+                        android:text="tramos subterráneos"
+                        android:textAllCaps="false"
+                        android:textSize="10dp" />
+
+                    <Button
+                        android:id="@+id/btn_transformer_center_map_infrastructure"
+                        android:layout_width="@dimen/cards_entity_map_infrastructure"
+                        android:layout_height="@dimen/cards_entity_map_infrastructure"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/unselected_button"
+                        android:drawableTop="@drawable/ic_transformer_center_card"
+                        android:elevation="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="5dp"
+                        android:stateListAnimator="@null"
+                        android:text="Centro de transformación"
+                        android:textAllCaps="false"
+                        android:textSize="10dp" />
+
+                    <Button
+                        android:id="@+id/btn_meter_map_infrastructure"
+                        android:layout_width="@dimen/cards_entity_map_infrastructure"
+                        android:layout_height="@dimen/cards_entity_map_infrastructure"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/unselected_button"
+                        android:drawableTop="@drawable/ic_meter_card"
+                        android:elevation="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="10dp"
+                        android:stateListAnimator="@null"
+                        android:text="Medidor"
+                        android:textAllCaps="false"
+                        android:textSize="10dp" />
+
+                    <Button
+                        android:id="@+id/btn_connection_point_map_infrastructure"
+                        android:layout_width="@dimen/cards_entity_map_infrastructure"
+                        android:layout_height="@dimen/cards_entity_map_infrastructure"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/unselected_button"
+                        android:drawableTop="@drawable/ic_connection_point_card"
+                        android:elevation="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="5dp"
+                        android:stateListAnimator="@null"
+                        android:text="Punto de conexión de acomedida"
+                        android:textAllCaps="false"
+                        android:textSize="10dp" />
+
+                    <Button
+                        android:id="@+id/btn_underground_box_map_infrastructure"
+                        android:layout_width="@dimen/cards_entity_map_infrastructure"
+                        android:layout_height="@dimen/cards_entity_map_infrastructure"
+                        android:layout_marginRight="37dp"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/unselected_button"
+                        android:drawableTop="@drawable/ic_underground_box_card"
+                        android:elevation="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="10dp"
+                        android:stateListAnimator="@null"
+                        android:text="Cajas subterráneas"
+                        android:textAllCaps="false"
+                        android:textSize="10dp" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/btn_to_be_checked_map_infrastructure"
+                    android:layout_width="@dimen/buttons_row_4_with"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="start"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:background="@drawable/unselected_button"
+                    android:elevation="10dp"
+                    android:stateListAnimator="@null"
+                    android:text="Por hacer"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlueDark"
+                    android:textSize="@dimen/button_text_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btn_checked_map_infrastructure"
+                    android:layout_width="@dimen/buttons_row_4_with"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="start"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/unselected_button"
+
+                    android:elevation="10dp"
+                    android:stateListAnimator="@null"
+                    android:text="Ejecutadas"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlueDark"
+                    android:textSize="@dimen/button_text_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_to_be_checked_map_infrastructure"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btn_failed_map_infrastructure"
+                    android:layout_width="@dimen/buttons_row_4_with"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="start"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/unselected_button"
+                    android:elevation="10dp"
+                    android:stateListAnimator="@null"
+                    android:text="Fallidas"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlueDark"
+                    android:textSize="@dimen/button_text_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_checked_map_infrastructure"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btn_all_map_infrastructure"
+                    android:layout_width="@dimen/buttons_row_4_with"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="start"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/button_blue"
+                    android:elevation="10dp"
+                    android:stateListAnimator="@null"
+                    android:text="Todas"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/button_text_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_failed_map_infrastructure"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/map_infrastructure"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_start_point_map_infrastructure"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:context=".MapsActivity" />
+
+            <Button
+                android:id="@+id/btn_start_point_map_infrastructure"
+                android:layout_width="@dimen/button_activities_with"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="start"
+                android:layout_marginBottom="24dp"
+                android:visibility="invisible"
+
+                android:background="@drawable/button_blue"
+                android:text="Ir al punto de incio"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/button_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

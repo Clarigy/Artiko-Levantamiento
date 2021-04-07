@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+
+        <layer-list>
+
+            <item>
+                <shape>
+                    <solid android:color="@color/colorWhite"/>
+                    <size android:height="@dimen/input_and_spinner_height"/>
+                    <corners android:radius="4dp" />
+                    <padding android:bottom="3dp" android:left="10dp" android:right="10dp" android:top="3dp" />
+                </shape>
+            </item>
+
+            <item android:drawable="@drawable/ic_arrow_spinner" android:gravity="center_vertical|right"/>
+
+        </layer-list>
+
+    </item>
+
+</selector>

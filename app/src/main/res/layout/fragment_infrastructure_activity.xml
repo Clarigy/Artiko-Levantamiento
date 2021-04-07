@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.InfrastructureSurvey.InfrastructureActivityFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_transformer_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/stepperIndicator"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view_transformer_activity"
+            android:fillViewport="true">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager_intro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </HorizontalScrollView>
+
+        <com.badoualy.stepperindicator.StepperIndicator
+            android:id="@+id/stepperIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="90dp"
+            android:layout_marginBottom="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:stpi_circleColor="@color/colorBlue"
+            app:stpi_circleRadius="5dp"
+            app:stpi_circleStrokeWidth="2dp"
+            app:stpi_indicatorColor="@color/colorBlue"
+            app:stpi_labelColor="@color/colorBlue"
+            app:stpi_lineStrokeWidth="0dp"
+            app:stpi_showDoneIcon="false"
+            app:stpi_showLabels="true"
+            app:stpi_useBottomIndicatorWithStepColors="true" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_syncro"
+        android:title="Sincronizar"
+        android:icon="@drawable/ic_syncro"
+        android:iconTint="@color/colorRed"></item>
+
+    <item
+        android:id="@+id/menu_activity"
+        android:title="Actividades"
+        android:icon="@drawable/ic_activity"
+        android:iconTint="@color/colorBlue"></item>
+
+    <item
+        android:id="@+id/menu_map"
+        android:title="Mapa"
+        android:icon="@drawable/ic_map"
+        android:iconTint="@color/colorBlue"></item>
+
+</menu>

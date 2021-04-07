@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragments.InfrastructureSurvey.Transformer.Transformer1ActivityFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.example.artikolevyinf.TextViews.TextView_blue_12
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="10dp"
+                android:text="Matrícula (*)"
+                android:textColor="@color/colorBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/info_ic_enroll_iv_transformer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:clickable="true"
+                android:src="@drawable/ic_info"
+                app:layout_constraintStart_toEndOf="@+id/textView1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.example.artikolevyinf.TextViews.TextView_red_10
+                android:id="@+id/deleteActivity_tv_transformer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginRight="37dp"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/enroll_et_transformer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginRight="37dp"
+                android:background="@drawable/spinner_shape"
+                android:elevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+            <com.example.artikolevyinf.TextViews.TextView_blue_12
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="17dp"
+                android:text="Foto completa antes de la matriculación (*)"
+                android:textColor="@color/colorBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/enroll_et_transformer" />
+
+            <ImageView
+                android:id="@+id/info_ic_image_before_iv_transformer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="19dp"
+                android:clickable="true"
+                android:src="@drawable/ic_info"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/enroll_et_transformer" />
+
+            <Button
+                android:id="@+id/camera_before_btn_transformer"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_stroke_continues_lines"
+                android:drawableTop="@drawable/ic_camera"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:text="Capturar"
+                android:textSize="6dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollViewBefore"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="43dp"
+                android:layout_marginRight="43dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/camera_before_btn_transformer"
+                app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                <LinearLayout
+                    android:id="@+id/linear_images_camera_before"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:orientation="horizontal">
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <com.example.artikolevyinf.TextViews.TextView_blue_12
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="17dp"
+                android:text="Placa técnica"
+                android:textColor="@color/colorBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/camera_before_btn_transformer" />
+
+            <ImageView
+                android:id="@+id/info_ic_technical_plate_iv_transformer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="19dp"
+                android:clickable="true"
+                android:src="@drawable/ic_info"
+                app:layout_constraintStart_toEndOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollViewBefore" />
+
+            <EditText
+                android:id="@+id/technical_plate_et_transformer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginRight="37dp"
+                android:background="@drawable/input_general"
+                android:elevation="10dp"
+                android:inputType="numberPassword"
+                android:selectAllOnFocus="true"
+                android:maxLength="5"
+                android:textColor="@color/colorBlueDark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <com.example.artikolevyinf.TextViews.TextView_blue_12
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="17dp"
+                android:text="Foto de placa técnica"
+                android:textColor="@color/colorBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/technical_plate_et_transformer" />
+
+            <ImageView
+                android:id="@+id/info_ic_image_after_iv_transformer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="19dp"
+                android:clickable="true"
+                android:src="@drawable/ic_info"
+                app:layout_constraintStart_toEndOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/technical_plate_et_transformer" />
+
+            <Button
+                android:id="@+id/camera_after_btn_transformer"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_stroke_continues_lines"
+                android:drawableTop="@drawable/ic_camera"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:text="Capturar"
+                android:textSize="6dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollViewAfter"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="43dp"
+                android:layout_marginRight="43dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/camera_after_btn_transformer"
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                <LinearLayout
+                    android:id="@+id/linear_images_camera_after"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/camera_after_btn_transformer">
+
+                <Button
+                    android:id="@+id/failed_btn_transformer1"
+                    android:layout_width="@dimen/button_activities_with"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginVertical="20dp"
+
+                    android:background="@drawable/button_red"
+                    android:elevation="10dp"
+                    android:stateListAnimator="@null"
+                    android:text="Actividad fallida"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/button_text_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/next_btn_transformer1"
+                    android:layout_width="@dimen/button_activities_with"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginVertical="20dp"
+
+                    android:background="@drawable/button_blue"
+                    android:elevation="10dp"
+                    android:stateListAnimator="@null"
+                    android:text="Siguiente"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/button_text_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

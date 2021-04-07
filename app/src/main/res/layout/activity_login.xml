@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Login.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/backgroud_login"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="72dp"
+                android:layout_marginTop="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_logo_aire"
+                tools:ignore="VectorDrawableCompat" />
+
+            <com.example.artikolevyinf.TextViews.TextView_white_10
+                android:id="@+id/textView_white_103"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/login"
+                app:title="Producto" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="106dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_white_103"
+                app:srcCompat="@drawable/ic_logo_artiko"
+                tools:ignore="VectorDrawableCompat" />
+
+            <com.example.artikolevyinf.TextViews.TextView_white_bold_13
+                android:id="@+id/textView_white_bold_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="76dp"
+                android:layout_marginLeft="76dp"
+                android:layout_marginTop="300dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:title="Inicio Sesión" />
+
+            <com.example.artikolevyinf.TextViews.TextView_white_10
+                android:id="@+id/textView_blue_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="76dp"
+                android:layout_marginLeft="76dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_white_bold_13"
+                app:title="Usuario" />
+
+            <EditText
+                android:id="@+id/location_transformer_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="76dp"
+                android:layout_marginLeft="76dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="76dp"
+                android:layout_marginRight="76dp"
+
+                android:background="@drawable/input_login"
+
+                android:inputType="textEmailAddress"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorGray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_blue_12" />
+
+            <com.example.artikolevyinf.TextViews.TextView_white_10
+                android:id="@+id/textView_white_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="76dp"
+                android:layout_marginLeft="76dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/location_transformer_et"
+                app:title="Contraseña" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="76dp"
+                android:layout_marginLeft="76dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="76dp"
+                android:layout_marginRight="76dp"
+                android:background="@drawable/input_login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+
+                android:selectAllOnFocus="true"
+
+                android:textColor="@color/colorGray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_white_10" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="start"
+                android:layout_marginStart="76dp"
+                android:layout_marginLeft="76dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="76dp"
+                android:layout_marginRight="76dp"
+                android:background="@drawable/button_blue_login"
+                android:enabled="false"
+                android:text="@string/login_button"
+
+                android:textColor="@color/colorWhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password" />
+
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="64dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/password"
+                app:layout_constraintStart_toStartOf="@+id/password"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_call_login"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/backgorund_button_call_login"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

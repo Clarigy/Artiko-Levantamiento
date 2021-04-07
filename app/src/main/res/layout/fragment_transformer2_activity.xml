@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragments.InfrastructureSurvey.Transformer.Transformer2ActivityFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.example.artikolevyinf.TextViews.TextView_blue_12
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="10dp"
+                android:text="Aceite Vegetal (*)"
+                android:textColor="@color/colorBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/info_ic_oil_iv_transformer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:clickable="true"
+                android:src="@drawable/ic_info"
+                app:layout_constraintStart_toEndOf="@+id/textView1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/oilYes_btn_transformer"
+                android:layout_width="87dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="start"
+
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/unselected_button"
+                android:elevation="10dp"
+                android:stateListAnimator="@null"
+                android:text="Si"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlueDark"
+                android:textSize="@dimen/button_text_size"
+                app:layout_constraintEnd_toStartOf="@+id/oilNo_btn_transformer"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+            <Button
+                android:id="@+id/oilNo_btn_transformer"
+                android:layout_width="87dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="start"
+
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/unselected_button"
+                android:elevation="10dp"
+                android:stateListAnimator="@null"
+                android:text="No"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlueDark"
+                android:textSize="@dimen/button_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/oilYes_btn_transformer"
+                app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+            <com.example.artikolevyinf.TextViews.TextView_blue_12
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="17dp"
+                android:text="Dirección Transformador (*)"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/oilYes_btn_transformer"></com.example.artikolevyinf.TextViews.TextView_blue_12>
+
+            <ImageView
+                android:id="@+id/info_ic_address_iv_transformer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="19dp"
+                android:clickable="true"
+                android:src="@drawable/ic_info"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/oilYes_btn_transformer" />
+
+            <EditText
+                android:id="@+id/location_transformer_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginRight="37dp"
+                android:background="@drawable/input_general"
+
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="9dp"
+                android:elevation="10dp"
+                android:enabled="true"
+                android:focusable="false"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorBlueDark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <com.example.artikolevyinf.TextViews.TextView_blue_12
+                android:id="@+id/textView201"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="17dp"
+                android:text="Tipo (*)"
+                android:textColor="@color/colorBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/location_transformer_et" />
+
+            <ImageView
+                android:id="@+id/info_ic_type_iv_transformer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="19dp"
+                android:clickable="true"
+                android:src="@drawable/ic_info"
+                app:layout_constraintStart_toEndOf="@+id/textView201"
+                app:layout_constraintTop_toBottomOf="@+id/location_transformer_et" />
+
+            <Button
+                android:id="@+id/aerial_btn_transformer"
+                android:layout_width="87dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="start"
+
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/unselected_button"
+                android:elevation="10dp"
+                android:stateListAnimator="@null"
+                android:text="Aéreo"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlueDark"
+                android:textSize="@dimen/button_text_size"
+                app:layout_constraintEnd_toStartOf="@+id/pcbPending_btn_transformer"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView201" />
+
+            <Button
+                android:id="@+id/pedestal_btn_transformer"
+                android:layout_width="87dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="start"
+
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/unselected_button"
+                android:elevation="10dp"
+                android:stateListAnimator="@null"
+                android:text="Pedestal"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlueDark"
+                android:textSize="@dimen/button_text_size"
+                app:layout_constraintEnd_toStartOf="@+id/pcbNo_btn_transformer"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/pcbYes_btn_transformer"
+                app:layout_constraintTop_toBottomOf="@+id/textView201" />
+
+            <Button
+                android:id="@+id/substation_btn_transformer"
+                android:layout_width="87dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="start"
+
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/unselected_button"
+                android:elevation="10dp"
+                android:stateListAnimator="@null"
+                android:text="Subestación"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlueDark"
+                android:textSize="@dimen/button_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/pcbPending_btn_transformer"
+                app:layout_constraintTop_toBottomOf="@+id/textView201" />
+
+            <com.example.artikolevyinf.TextViews.TextView_blue_12
+                android:id="@+id/textView200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="17dp"
+                android:text="Tipo de área (*)"
+                android:textColor="@color/colorBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pedestal_btn_transformer" />
+
+            <ImageView
+                android:id="@+id/info_ic_typeAreal_iv_transformer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="19dp"
+                android:clickable="true"
+                android:src="@drawable/ic_info"
+                app:layout_constraintStart_toEndOf="@+id/textView200"
+                app:layout_constraintTop_toBottomOf="@+id/pedestal_btn_transformer" />
+
+            <Button
+                android:id="@+id/typeArea_btn_rural_transformer"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="start"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/unselected_button"
+                android:elevation="10dp"
+                android:stateListAnimator="@null"
+                android:text="Rural"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlueDark"
+                android:textSize="@dimen/button_text_size"
+                app:layout_constraintEnd_toStartOf="@+id/typeArea_btn_urban_transformer"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView200" />
+
+            <Button
+                android:id="@+id/typeArea_btn_urban_transformer"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="start"
+
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/unselected_button"
+                android:elevation="10dp"
+                android:stateListAnimator="@null"
+                android:text="Urbano"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlueDark"
+                android:textSize="@dimen/button_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/typeArea_btn_rural_transformer"
+                app:layout_constraintTop_toBottomOf="@+id/textView200" />
+
+            <com.example.artikolevyinf.TextViews.TextView_blue_12
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="17dp"
+                android:text="Equipo fabricado con PCB (*)"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/typeArea_btn_rural_transformer" />
+
+            <ImageView
+                android:id="@+id/info_ic_pcb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="19dp"
+                android:clickable="true"
+                android:src="@drawable/ic_info"
+                app:layout_constraintStart_toEndOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/typeArea_btn_rural_transformer" />
+
+            <Button
+                android:id="@+id/pcbYes_btn_transformer"
+                android:layout_width="87dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="start"
+
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/unselected_button"
+                android:elevation="10dp"
+                android:stateListAnimator="@null"
+                android:text="Si"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlueDark"
+                android:textSize="@dimen/button_text_size"
+                app:layout_constraintEnd_toStartOf="@+id/pcbPending_btn_transformer"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <Button
+                android:id="@+id/pcbPending_btn_transformer"
+                android:layout_width="87dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="start"
+
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/unselected_button"
+                android:elevation="10dp"
+                android:stateListAnimator="@null"
+                android:text="Pendiente"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlueDark"
+                android:textSize="@dimen/button_text_size"
+                app:layout_constraintEnd_toStartOf="@+id/pcbNo_btn_transformer"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/pcbYes_btn_transformer"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <Button
+                android:id="@+id/pcbNo_btn_transformer"
+                android:layout_width="87dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="start"
+
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/unselected_button"
+                android:elevation="10dp"
+                android:stateListAnimator="@null"
+                android:text="No"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlueDark"
+                android:textSize="@dimen/button_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/pcbPending_btn_transformer"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <com.example.artikolevyinf.TextViews.TextView_blue_12
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="17dp"
+                android:text="Capacidad (*)"
+                android:textColor="@color/colorBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pcbPending_btn_transformer" />
+
+            <ImageView
+                android:id="@+id/info_ic_capacity_iv_transformer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="19dp"
+                android:clickable="true"
+                android:src="@drawable/ic_info"
+                app:layout_constraintStart_toEndOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/pcbPending_btn_transformer" />
+
+            <EditText
+                android:id="@+id/capacity_et_transformer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginRight="37dp"
+                android:background="@drawable/input_general_disable"
+                android:elevation="0dp"
+                android:enabled="false"
+                android:inputType="numberPassword"
+                android:selectAllOnFocus="true"
+                android:maxLength="5"
+                android:textColor="@color/colorBlueDark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/capacity_et_transformer">
+
+                <Button
+                    android:id="@+id/previous_btn_transformer2"
+                    android:layout_width="@dimen/button_activities_with"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginVertical="20dp"
+
+                    android:background="@drawable/button_blue"
+                    android:elevation="10dp"
+                    android:stateListAnimator="@null"
+                    android:text="Anterior"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/button_text_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/next_btn_transformer2"
+                    android:layout_width="@dimen/button_activities_with"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginVertical="20dp"
+
+                    android:background="@drawable/button_blue"
+                    android:elevation="10dp"
+                    android:stateListAnimator="@null"
+                    android:text="Siguiente"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/button_text_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

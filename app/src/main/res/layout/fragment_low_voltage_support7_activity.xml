@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.InfrastructureSurvey.LowVoltageSupport.LowVoltageSupport7ActivityFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.example.artikolevyinf.TextViews.TextView_blue_12
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="10dp"
+                android:text="Uso (Recursos) (*)"
+                android:textColor="@color/colorBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/info_use_resources_lvSupport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:clickable="true"
+                android:src="@drawable/ic_info"
+                app:layout_constraintStart_toEndOf="@+id/textView1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/use_resources_spn_lvSupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginRight="37dp"
+                android:background="@drawable/spinner_shape"
+                android:elevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+            <com.example.artikolevyinf.TextViews.TextView_blue_12
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="17dp"
+                android:text="UUCC lavado (*)"
+                android:textColor="@color/colorBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/use_resources_spn_lvSupport" />
+
+            <ImageView
+                android:id="@+id/info_ic_UUCC_iv_lvSupport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="19dp"
+                android:clickable="true"
+                android:src="@drawable/ic_info"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/use_resources_spn_lvSupport" />
+
+            <Spinner
+                android:id="@+id/UUCC_spn_lvSupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginRight="37dp"
+                android:background="@drawable/spinner_shape"
+                android:elevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/UUCC_spn_lvSupport">
+
+                <Button
+                    android:id="@+id/previous_btn_lvSupport7"
+                    android:layout_width="@dimen/button_activities_with"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginVertical="20dp"
+
+                    android:background="@drawable/button_blue"
+                    android:elevation="10dp"
+                    android:stateListAnimator="@null"
+                    android:text="Anterior"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/button_text_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/finish_btn_lvSupport7"
+                    android:layout_width="@dimen/button_activities_with"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginVertical="20dp"
+
+                    android:background="@drawable/button_blue"
+                    android:elevation="10dp"
+                    android:stateListAnimator="@null"
+                    android:text="Terminar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/button_text_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

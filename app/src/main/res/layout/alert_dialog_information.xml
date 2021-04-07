@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.artikolevyinf.TextViews.TextView_blue_12
+        android:id="@+id/titleAlertDialogInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="37dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:text="Titulo"
+        android:textColor="@color/colorBlue" />
+
+    <com.example.artikolevyinf.TextViews.TextView_blueDark_10
+        android:id="@+id/contentTextAlertDialogInfo"
+        android:layout_marginHorizontal="37dp"
+        android:text="Contenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/negative_action"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="160dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="1"
+            android:text="Cancelar"
+            android:textSize="@dimen/button_text_size"
+            android:textAllCaps="false"
+            android:background="@drawable/button_red"
+            android:elevation="10dp"
+            android:stateListAnimator="@null"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/positive_action"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginRight="37dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="1"
+            android:text="Aceptar"
+            android:textSize="@dimen/button_text_size"
+            android:textAllCaps="false"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/colorWhite"
+            android:elevation="10dp"
+            android:stateListAnimator="@null"/>
+    </LinearLayout>
+
+</LinearLayout>

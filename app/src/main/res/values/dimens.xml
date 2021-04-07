@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="button_text_size">12dp</dimen>
+    <dimen name="editText_text_size">12dp</dimen>
+
+    <dimen name="button_text_size_filter">10dp</dimen>
+
+    <dimen name="input_and_spinner_height">30dp</dimen>
+    <dimen name="button_height">30dp</dimen>
+    <dimen name="button_with">87dp</dimen>
+    <dimen name="button_activities_with">100dp</dimen>
+
+    <dimen name="buttons_row_4_with">80dp</dimen>
+
+    <dimen name="cards_entity_map_infrastructure">75dp</dimen>
+</resources>

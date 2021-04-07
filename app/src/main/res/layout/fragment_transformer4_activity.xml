@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.InfrastructureSurvey.Transformer.Transformer4ActivityFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.example.artikolevyinf.TextViews.TextView_blue_12
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="10dp"
+                android:text="Fecha de Fabricación"
+                android:textColor="@color/colorBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/info_ic_fabDate_iv_transformer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:clickable="true"
+                android:src="@drawable/ic_info"
+                app:layout_constraintStart_toEndOf="@+id/textView1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/fabDate_et_transformer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginRight="37dp"
+                android:background="@drawable/input_general"
+
+                android:drawableRight="@drawable/ic_calendar_today"
+                android:drawablePadding="9dp"
+                android:elevation="10dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:inputType="date"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorBlueDark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+            <com.example.artikolevyinf.TextViews.TextView_blue_12
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="17dp"
+                android:text="Grupo"
+                android:textColor="@color/colorBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fabDate_et_transformer" />
+
+            <ImageView
+                android:id="@+id/info_ic_group_iv_transformer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="19dp"
+                android:clickable="true"
+                android:src="@drawable/ic_info"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/fabDate_et_transformer" />
+
+            <EditText
+                android:id="@+id/group_et_transformer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginRight="37dp"
+                android:background="@drawable/input_general"
+                android:elevation="10dp"
+                android:inputType="numberPassword"
+                android:selectAllOnFocus="true"
+                android:maxLength="2"
+                android:textColor="@color/colorBlueDark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <com.example.artikolevyinf.TextViews.TextView_blue_12
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="17dp"
+                android:text="Instalación Origen v10"
+                android:textColor="@color/colorBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/group_et_transformer" />
+
+            <ImageView
+                android:id="@+id/info_ic_v10Installation_iv_transformer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="19dp"
+                android:clickable="true"
+                android:src="@drawable/ic_info"
+                app:layout_constraintStart_toEndOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/group_et_transformer" />
+
+            <Spinner
+                android:id="@+id/transformer_v10Installation_spn_transformer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginRight="37dp"
+                android:background="@drawable/spinner_shape"
+                android:elevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <com.example.artikolevyinf.TextViews.TextView_blue_12
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="17dp"
+                android:text="Marca"
+                android:textColor="@color/colorBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/transformer_v10Installation_spn_transformer" />
+
+            <ImageView
+                android:id="@+id/info_ic_brand_iv_transformer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="19dp"
+                android:clickable="true"
+                android:src="@drawable/ic_info"
+                app:layout_constraintStart_toEndOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/transformer_v10Installation_spn_transformer" />
+
+            <EditText
+                android:id="@+id/brand_et_transformer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginRight="37dp"
+
+                android:background="@drawable/input_general"
+                android:elevation="10dp"
+                android:inputType="text"
+                android:maxLength="40"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorBlueDark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/brand_et_transformer">
+
+                <Button
+                    android:id="@+id/previous_btn_transformer4"
+                    android:layout_width="@dimen/button_activities_with"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginVertical="20dp"
+
+                    android:background="@drawable/button_blue"
+                    android:elevation="10dp"
+                    android:stateListAnimator="@null"
+                    android:text="Anterior"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/button_text_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/next_btn_transformer4"
+                    android:layout_width="@dimen/button_activities_with"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginVertical="20dp"
+
+                    android:background="@drawable/button_blue"
+                    android:elevation="10dp"
+                    android:stateListAnimator="@null"
+                    android:text="Siguiente"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/button_text_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

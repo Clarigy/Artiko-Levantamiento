@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextViews">
+        <attr name="title" format="string"/>
+    </declare-styleable>
+
+    <!-- Atributos para el componente Card_activities -->
+    <declare-styleable name="CardActivities">
+        <attr name="titleCardActivities" format="string"/>
+        <attr name="subtitle" format="string"/>
+    </declare-styleable>
+
+</resources>
