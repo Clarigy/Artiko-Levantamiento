@@ -28,7 +28,7 @@ public class Globals {
     /** Tipos de actividades*/
     public static String strAllActivities = "ALL";
     public static String strInfrastructureSurveyActivities = "INFRASTRUCTURE_SURVEY";
-    public static String strReviewBTActivities = "REVIEW_BT";
+
 
     /** Actividada actual*/
     public static String strCurrentActivities = strAllActivities;
@@ -87,19 +87,6 @@ public class Globals {
     /** Cards del mapa que guardaran los filtros*/
     public static ArrayList<CardGeneralActivity> dataMapActivitiesArray = new ArrayList<>();
 
-    /** CheckBox para filtros del mapa*/
-    /** Actividades */
-    public static boolean cbFilterScrActivityMap = false;
-    public static boolean cbFilterReviewsBtActivityMap = false;
-    public static boolean cbFilterReviewsMtActivityMap = false;
-    /** SubActividades */
-    public static boolean cbFilterSuspensionMap = false;
-    public static boolean cbFilterCutMap = false;
-    public static boolean cbFilterReconnectionMap = false;
-    /** Estado */
-    public static boolean cbFilterToDoMap = false;
-    public static boolean cbFilterExecutedMap = false;
-    public static boolean cbFilterFailedMap = false;
 
     /** ------------------- Syncronizar información ------------------*/
     public static boolean boolSyncroDataGeneral = false;

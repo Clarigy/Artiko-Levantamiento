@@ -22,7 +22,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.artikolevyinf.Fragments.ActivityFragment;
-import com.example.artikolevyinf.Fragments.Map.MapFragment;
 import com.example.artikolevyinf.Fragments.Map.MapInfrastructureFragment;
 import com.example.artikolevyinf.Fragments.ProfileFragment;
 import com.example.artikolevyinf.Model.InfrastructureSurvey.DistributionTransformerActivity;
@@ -128,8 +127,6 @@ public class MainActivity extends AppCompatActivity {
                     if (!blnChangeColor) {
                         if(Globals.strCurrentActivities.equals(Globals.strInfrastructureSurveyActivities)){
                             showSelectedFragment(new MapInfrastructureFragment(), "Map");
-                        }else {
-                            showSelectedFragment(new MapFragment(), "Map");
                         }
                     }
                     blnChangeColor = false;
